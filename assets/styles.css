@@ -4,6 +4,8 @@
   justify-content: center;
 }
 
-i.fa-react {
+i.fa-react,
+.page-p-text {
   color: #343A40;
 }
+
