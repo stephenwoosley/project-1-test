@@ -1,6 +1,7 @@
 var button = document.querySelector(".btn, .btn-success, .btn-lg");
 var background = document.querySelector("body");
 var jumbotron = document.querySelector(".jumbotron");
+var reactIcons = document.querySelectorAll(".fa-react");
 var darkMode = false;
 
 button.addEventListener("click", function() {
@@ -11,8 +12,10 @@ button.addEventListener("click", function() {
     button.textContent = "Dark Mode";
     button.classList.remove("btn-light");
     button.classList.add("btn-dark");
+    reactIcons.forEach(icon => {
+      icon.style.color = "#343A40";
+    });
     darkMode = false;
-
   }
   else {
     background.style.backgroundColor = "#212529";
@@ -21,6 +24,9 @@ button.addEventListener("click", function() {
     button.textContent = "Light Mode";
     button.classList.remove("btn-dark");
     button.classList.add("btn-light");
+    reactIcons.forEach(icon => {
+      icon.style.color = "#e5e5e5";
+    });
     darkMode = true;
   }
 })

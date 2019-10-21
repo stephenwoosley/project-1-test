@@ -1,0 +1,9 @@
+.col-8.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i.fa-react {
+  color: #343A40;
+}
